@@ -2,28 +2,33 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import './Cabecalho.css'
 import { ToggleP } from './CabecalhoService'
-
-let toggleP = ToggleP
-
+import { HashLink as Link } from 'react-router-hash-link';
 export default function Cabecalho() {
     return (
+
         <div className='corpo'>
             <header className='cabecalho'>
                 <div className='menu'>
 
 
                     <nav className='navbar'>
-                        <button id="hamburguer" className='hamburger' value='toggle' onClick={toggleP}></button>
                         <p className='titulo'><span>D</span>iogo Favilla</p>
                         <ul className='corpo-menu'>
                             <li>
-                                <a>Sobre mim</a>
+                                <Link to='#sobre' smooth>
+                                    <a> Sobre mim</a>
+                                </Link>
                             </li>
                             <li >
-                                <a>Linguagens</a>
+                                <Link to='#secao' smooth>
+                                    <a>Linguagens</a>
+                                </Link>
                             </li>
                             <li>
-                                <a>Projetos</a>
+                                <Link to='#projetos' smooth>
+                                    <a>Projetos</a>
+                                </Link>
+                            
                             </li>
                         </ul>
                     </nav>
@@ -33,5 +38,6 @@ export default function Cabecalho() {
 
             <Outlet />
         </div>
+
     )
 }

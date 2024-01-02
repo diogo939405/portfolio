@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    ;
+    color: white;
+}
+
+.titu {
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 100px;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    /* overflow: hidden;
+    animation: typing 8.5s steps(30,end),
+    blink-caret .5s step-end infinite */
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+
+
+.circles {
+    display: flex;
+    /* height: 90vh; */
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.circle {
+    padding-right: 20px;
+    /* background-color: rgba(210, 44, 44, 0.654); */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 45px;
+    /* padding: 100px; */
+    margin-bottom: 100px;
+    border: 4px solid transparent;
+    box-shadow: 4px 4px 25px 6px rgba(202, 201, 201, 0.837);
+    transform: scale(.9);
+    /* z-index: -1; */
+    cursor: pointer;
+}
+
+.circle:hover {
+    border-color: rgb(213, 210, 210);
+    box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.837);
+    /* animation: quica .8s cubic-bezier(.53,-0.03, .67, 1.06);
+        animation-direction: alternate;
+        animation-iteration-count:calc(4); */
+}
+
+/* 
+@keyframes quica{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(100%);
+        width: 220px;
+        height: 10px;
+    }
+} */
+
+.janela {}
+
+.sec {
+    margin: 0 auto;
+}
+
+.dialogo {
+
+    background: #9b529164;
+    border-radius: 25px;
+    padding: 25px;
+    width: 35%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 330%) scale(0.1);
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    border-radius: 10px;
+    border: 4px solid rgba(255, 255, 255, 0.798);
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.597);
+    z-index: 3;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.open-dialogo {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, 280%) scale(1);
+    transition: 2s ease-in;
+
+}
+
+.close-dialogo {
+    visibility: hidden;
+    top: 0;
+    transform: translate(-50%, 330%) scale(0.1);
+    transition: opacity 0.5s ease-out;
+}
+
+.dialogo::backdrop {
+    background-color: rgba(78, 77, 77, 0.435);
+    opacity: 0.75;
+}
+
+
+.bot {
+    background: none;
+    border: none;
+}
+
+.tituu {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.texto {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 35px;
+}
+
+.divBotao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 65px;
+}
+
+.esconder {
+    font-family: 'Roboto', sans-serif;
+    ;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    background-color: #9b529164;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.esconder:hover {
+    border: 1px solid white;
+    /* background-color: rgb(136, 135, 135);
+    color: #9b529164; */
+    transition: ease 0.5s;
+}

@@ -2,7 +2,7 @@ import './App.css';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Cabecalho from './Cabeçalho/Cabecalho'
 import BlocoPrincipal from './Conteudo/BlocoPrincipal/BlocoPrincipal'
-  
+
 const router = createBrowserRouter(
   createRoutesFromElements(
 

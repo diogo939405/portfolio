@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    ;
+    color: white;
+}
+
+.secao{
+    margin-bottom: -25px;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    /* opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 6s ease forwards; */
+}
+
+/* @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } */
+/* .secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+} */
+
+/* .container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 4s ease forwards;
+} */
+
+/* .secao:hover{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+} */
+
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 calc(33, 33% - 20px);
+    max-width: calc(33, 33% - 20px);
+    width: 28%;
+    background: #efecec1f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: .3s;
+    border: 4px solid transparent;
+    box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.837);
+    transform: scale(.9);
+    /* z-index: -1; */
+    cursor: pointer;
+  
+}
+
+
+
+.card:hover {
+    border-color: rgb(252, 250, 250);
+    box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.837);
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 1.8rem;
+    color: rgba(208, 241, 158, 0.972);
+}
+
+.html {
+    /* transition: all 0.5s;
+    cursor: pointer; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.html:hover {
+    /* -webkit-transform: scale(1.5);
+    transform: scale(1.5); */
+}
