@@ -11,9 +11,9 @@ let Projetos = blocoProjetos
 
 export default function BlocoPrincipal() {
   return (
-    <div> 
-      <section><SobreMim/></section>    
-      <section><Linguagens/></section>
+    <div>
+      <section><SobreMim /></section>
+      <section><Linguagens /></section>
       <br></br>
       <br></br>
       <br></br>
@@ -23,14 +23,14 @@ export default function BlocoPrincipal() {
       <br></br>
       <br></br>
       <br></br>
-   
 
 
-      
-      
-      <section><Projetos/></section>  
-      <Outlet/>
-      
+
+
+
+      <section><Projetos /></section>
+      <Outlet />
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
     </div>
   )
 }

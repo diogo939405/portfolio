@@ -17,7 +17,7 @@ export default function BlocoProjetos() {
         // console.log(getDadosProjetos(projetoSelecionado))
         let x = document.getElementById('dialogo')
         let t = document.getElementById('titu')
-        t.style.display = 'none'
+        t.style.display = 'hide'
         x.showModal()
         x.classList.remove('close-dialogo');
         x.classList.add('open-dialogo');
