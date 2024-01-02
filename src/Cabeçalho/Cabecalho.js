@@ -9,13 +9,11 @@ export default function Cabecalho() {
         <div className='corpo'>
             <header className='cabecalho'>
                 <div className='menu'>
-
-
                     <nav className='navbar'>
                         <p className='titulo'><span>D</span>iogo Favilla</p>
                         <ul className='corpo-menu'>
                             <li>
-                                <Link to='#sobre' smooth>
+                                <Link to='#sobre' smooth >
                                     <a> Sobre mim</a>
                                 </Link>
                             </li>
@@ -28,7 +26,7 @@ export default function Cabecalho() {
                                 <Link to='#projetos' smooth>
                                     <a>Projetos</a>
                                 </Link>
-                            
+
                             </li>
                         </ul>
                     </nav>

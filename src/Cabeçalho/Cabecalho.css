@@ -102,7 +102,7 @@ a:hover::after {
     .titulo {
         font: normal 700 16px / 15px "Roboto", Helvetica, Arial, Verdana, sans-serif;
         ;
-        left: 80px;
+        left: 40px;
         margin-top: 22px;
 
     }
@@ -118,6 +118,32 @@ a:hover::after {
         .titulo {
             font-size: 14px;
             left: 23px;
+        }
+    }
+    @media only screen and (max-width: 620px) {
+        a {
+            font-size: 14px;
+            padding-right: 20px;
+
+        }
+        .corpo-menu li a {
+            position: relative;
+            padding: 12px;
+            display: inline;
+        }
+        .titulo {
+            font-size: 12px;
+            left: 23px;
+        }
+        a::after {
+            content: "";
+            height: 2px;
+            width: 90%;
+            background: white;
+            left: 0;
+            bottom: 10px;
+            position: absolute;
+            opacity: 0;
         }
     }
 }
