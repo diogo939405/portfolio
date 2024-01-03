@@ -19,16 +19,41 @@
 .titulo {
     position: fixed;
     left: 100px;
-    margin-top: 20px;
+    margin-top: 5px;
     justify-content: flex-start;
     text-decoration: none;
     font: normal 700 17px "Roboto", Helvetica, Arial, Verdana, sans-serif;
     ;
     color: var(--terciaria);
     z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .titulo:hover{
     background-color: blanchedalmond;
+}
+.logo-texto{
+    line-height: 60px;
+    margin-left: 20px;
+    position: relative;
+    /* border-right: 2px solid ; */
+    width: 25ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 2.5s steps(25),
+    span 0,5s infinite step-end;
+    z-index: 1;
+}
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+}
+@keyframes span{
+    50%{
+        border-color: transparent;
+    }
 }
 
 .menu {
@@ -76,6 +101,8 @@ a {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: var(--terciaria);
+    font-weight:800;
+    z-index: 1;
 }
 
 a::after {
@@ -102,13 +129,36 @@ a:hover::after {
         color: var(--terciaria);
     }
 
-    .titulo {
-        font: normal 700 16px / 15px "Roboto", Helvetica, Arial, Verdana, sans-serif;
-        ;
-        left: 40px;
-        margin-top: 22px;
+   .titulo{
+    display: flex;
+    flex-wrap: nowrap;
+}
 
+.logo-texto{
+    line-height: 60px;
+    margin-left: 20px;
+    position: relative;
+    /* border-right: 2px solid ; */
+    width: 25ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 2.5s steps(25),
+    span 0,5s infinite step-end;
+}
+.logo-texto::after{
+    border-right: 0px;
+}
+
+@keyframes digitando{
+    from{
+        width: 0;
     }
+}
+@keyframes span{
+    50%{
+        border-color: transparent;
+    }
+}
 
     @media only screen and (max-width: 620px) {
 

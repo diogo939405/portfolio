@@ -43,8 +43,8 @@ export default function BlocoProjetos() {
             <section className='sec' id='projetos'>
                 <dialog class='dialogo' id='dialogo'>
                     <div className='janela'>
-                        <h2 className='tituu'>{getDadosProjetos(projetoSelecionado).titulo}</h2>
-                        <p className='texto'>{getDadosProjetos(projetoSelecionado).texto}
+                        <h2 className='titulo-janela'>{getDadosProjetos(projetoSelecionado).titulo}</h2>
+                        <p className='texto-janela'>{getDadosProjetos(projetoSelecionado).texto}
                         </p>
                         <div className='divBotao'>
                             <button onClick={hide} id='esconder' className='esconder'>OK</button>
@@ -55,7 +55,7 @@ export default function BlocoProjetos() {
 
                     </div>
                 </dialog>
-                <h1 className='titu' id='titu'>Projetos</h1>
+                <h1 className='titulo-projetos' id='titu'>Projetos</h1>
                 <div className='main'>
                     <div className='circles'>
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(1) }} id='mostrar'>

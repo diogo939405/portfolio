@@ -12,7 +12,8 @@ export default function Cabecalho() {
                 <div className='menu'>
                     <nav className='navbar'>
                         <p className='titulo'>
-                            <img src={logo} height='60px' width='60px' alt='oie'  ></img>
+                            <img src={logo} height='60px' width='60px' alt='oie'></img>
+                            <h4 className='logo-texto'>Diogo Favilla system developer</h4>
                         </p>
                         <ul className='corpo-menu'>
                             <li>

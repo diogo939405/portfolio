@@ -9,7 +9,9 @@
     color: white;
 }
 
-.titu {
+
+
+.titulo-projetos {
     font-size: 50px;
     line-height: 80px;
     text-align: center;
@@ -17,6 +19,7 @@
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
+    display: block;
     /* overflow: hidden;
     animation: typing 8.5s steps(30,end),
     blink-caret .5s step-end infinite */
@@ -95,7 +98,7 @@
     }
 } */
 
-.janela {}
+
 
 .sec {
     margin: 0 auto;
@@ -147,7 +150,7 @@
     border: none;
 }
 
-.tituu {
+.titulo-janela {
     color: white;
     font-size: 1.5rem;
     display: flex;
