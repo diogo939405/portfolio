@@ -1,7 +1,3 @@
-
-var id = Number
-var Titulo = String;
-var Texto = String;
 const listaProjetos = [
     {
         id: 1,

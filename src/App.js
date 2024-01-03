@@ -6,9 +6,8 @@ import BlocoPrincipal from './Conteudo/BlocoPrincipal/BlocoPrincipal'
 const router = createBrowserRouter(
   createRoutesFromElements(
 
-    <Route path="/" element={<Cabecalho />}>
-      <Route path="BlocoPrincipal" element={<BlocoPrincipal />}></Route>
-      <Route index element={<BlocoPrincipal />} />
+    <Route path="/" element={<BlocoPrincipal />}>
+      {/* <Route path="BlocoPrincipal" element={<BlocoPrincipal />}></Route> */}
       {/* <Route path="blocoPrincipal" element={<blocoPrincipal/>}/>
         <Route index element={<blocoPrincipal/>}/> */}
     </Route>

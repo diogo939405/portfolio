@@ -53,7 +53,7 @@
     transform: translate3d(0, 0, 0);
 } */
 
-h1 {
+.titulo-skills {
     font-size: 50px;
     line-height: 60px;
     text-align: center;
@@ -63,21 +63,26 @@ h1 {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#foto-type{
+    margin-top: -16px;
 }
 
 .card {
-    flex: 0 0 calc(33, 33% - 20px);
-    max-width: calc(33, 33% - 20px);
-    width: 28%;
+    position: relative;
+    flex-grow: 1;
+    width: 23%;
     background: #efecec1f;
-    padding: 20px;
+    padding: 8px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     transition: .3s;
     border: 4px solid transparent;
     box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.837);
-    transform: scale(.9);
+    transform: scale(.8);
     /* z-index: -1; */
     cursor: pointer;
   
@@ -113,4 +118,25 @@ h1 {
 .html:hover {
     /* -webkit-transform: scale(1.5);
     transform: scale(1.5); */
+}
+
+@media only screen and (max-width: 800px) {
+    .titulo-skills{
+        font-size: 2rem;
+    }
+    .card{
+        width: 21%;
+        margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 610px) {
+        .titulo-skills{
+            font-size: 1rem;
+        }
+        .card {
+            width: 140px;
+            margin-bottom: -20px;
+        }
+    }
+    
 }

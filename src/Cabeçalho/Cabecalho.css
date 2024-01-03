@@ -25,6 +25,7 @@
     font: normal 700 17px "Roboto", Helvetica, Arial, Verdana, sans-serif;
     ;
     color: var(--terciaria);
+    z-index: 1;
 }
 .titulo:hover{
     background-color: blanchedalmond;
@@ -34,7 +35,7 @@
     padding: 0;
     margin: 0 auto;
     /* background-color:rgba(221, 216, 216, 0.93); */
-    height: 90px;
+    /* height: 60px; */
     justify-content: space-between;
 }
 

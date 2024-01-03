@@ -53,6 +53,7 @@
     width: 100vw;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 
 }
@@ -122,9 +123,9 @@
 
 .open-dialogo {
     visibility: visible;
-    top: 20%;
+    top: 94%;
     transform: translate(-50%, 280%) scale(1);
-    transition: 2s ease-in;
+    transition: 1.5s ease-in;
 
 }
 
