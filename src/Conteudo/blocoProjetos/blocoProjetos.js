@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import './blocoProjetos.css'
 import './conteudo.js'
+import logoPuc from './imagensProjetos/brasao_puc-rio-removebg-preview.png'
 
 import { Button } from 'primereact/button';
 import { getDadosProjeto } from './conteudo.js';
@@ -57,14 +58,15 @@ export default function BlocoProjetos() {
                 </dialog>
                 <h1 className='titulo-projetos' id='titu'>Projetos</h1>
                 <div className='main'>
-                    <div className='circles'>
+                    <div className='circles' >
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(1) }} id='mostrar'>
-                            <div className='circle'>
+                            <div className='circle' id='RB1'>
+                            {/* <img src={logoPuc} className='logo'></img> */}
                             </div>
                         </button>
 
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(2) }} id='mostrar'>
-                            <div className='circle'>
+                            <div className='circle' id='Puc'>
                             </div>
                         </button>
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(3) }} id='mostrar'>
@@ -86,3 +88,4 @@ export default function BlocoProjetos() {
         </div>
     )
 }
+// style={{backgroundImage:`url(${logoPuc})`,width:"10px",height:"10px"}}

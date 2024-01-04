@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+
 * {
     margin: 0;
     /* padding: 0; */
@@ -57,13 +58,21 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+#Puc{
+    background-image:url('./imagensProjetos/brasao_puc-rio-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-
+#RB1{
+    background-image: url('./imagensProjetos/rb1-logo-AD9408244E-seeklogo.com-removebg-preview.ico');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .circle {
-    padding-right: 20px;
-    /* background-color: rgba(210, 44, 44, 0.654); */
+    background-color: rgb(234 196 196 / 65%);
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -77,6 +86,7 @@
     cursor: pointer;
 }
 
+
 .circle:hover {
     border-color: rgb(213, 210, 210);
     box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.837);
@@ -84,6 +94,12 @@
         animation-direction: alternate;
         animation-iteration-count:calc(4); */
 }
+
+/* .logo{
+    border-radius: 50%;
+    height: 200px;
+    width: 150px;
+} */
 
 /* 
 @keyframes quica{
