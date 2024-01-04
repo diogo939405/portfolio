@@ -13,7 +13,7 @@
 
 
 .titulo-projetos {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 140px;
     text-align: center;
     margin-bottom: 100px;
@@ -64,12 +64,14 @@
     background-image: url('./imagensProjetos/brasao_puc-rio-removebg-preview.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -90px;
 }
 
 #RB1 {
     background-image: url('./imagensProjetos/Logo_top1-1-e1653228986853-meno__1_-removebg-preview.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -90px;
 }
 
 .circle {
@@ -208,4 +210,21 @@
     /* background-color: rgb(136, 135, 135);
     color: #9b529164; */
     transition: ease 0.5s;
+}
+
+.descricao{
+    display: none;
+    position: relative;
+}
+.descricao-ativo{
+    display: flex;
+}
+
+.descricao::before{
+
+}
+ 
+.descricao-texto{
+    font-size: 15px;
+    margin-top: 190px;
 }
