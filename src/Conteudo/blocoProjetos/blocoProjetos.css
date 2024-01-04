@@ -14,11 +14,11 @@
 
 .titulo-projetos {
     font-size: 50px;
-    line-height: 80px;
+    line-height: 140px;
     text-align: center;
     margin-bottom: 100px;
     white-space: nowrap;
-    margin: 0 auto;
+   
     letter-spacing: .15em;
     display: block;
     /* overflow: hidden;
