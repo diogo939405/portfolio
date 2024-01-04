@@ -5,6 +5,7 @@ import './conteudo.js'
 import logoPuc from './imagensProjetos/brasao_puc-rio-removebg-preview.png'
 
 import { Button } from 'primereact/button';
+        
 import { getDadosProjeto } from './conteudo.js';
 
 
@@ -42,10 +43,12 @@ export default function BlocoProjetos() {
                 <h1 className='titulo-projetos' id='titu'>Projetos</h1>
                 <div className='main'>
                     <div className='circles' >
+                        
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(1) }} id='mostrar'>
                             <div className='circle' id='RB1'>
                                 <div className='descricao' id='descricao'>
                                     <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                  
                                 </div>
                             </div>
                         </button>
