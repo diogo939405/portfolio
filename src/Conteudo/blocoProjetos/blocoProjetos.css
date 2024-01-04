@@ -59,14 +59,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#Puc{
-    background-image:url('./imagensProjetos/brasao_puc-rio-removebg-preview.png');
+
+#Puc {
+    background-image: url('./imagensProjetos/brasao_puc-rio-removebg-preview.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#RB1{
-    background-image: url('./imagensProjetos/rb1-logo-AD9408244E-seeklogo.com-removebg-preview.ico');
+#RB1 {
+    background-image: url('./imagensProjetos/Logo_top1-1-e1653228986853-meno__1_-removebg-preview.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
