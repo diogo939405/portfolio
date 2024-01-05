@@ -1,7 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import './Cabecalho.css'
-import { ToggleP } from './CabecalhoService'
 import { HashLink as Link } from 'react-router-hash-link';
 import logo from "./../imagens/logo_diogo-removebg-preview.png"
 export default function Cabecalho() {

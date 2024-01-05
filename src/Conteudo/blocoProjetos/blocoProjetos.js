@@ -49,14 +49,16 @@ export default function BlocoProjetos() {
                             <div className='circle' id='RB1'>
                                 <div className='legenda' id='descricao'>
                                     <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" style={
-                                        {
-                                            'height': '50px',
-                                            'width': '180px',
-                                            'fontWeight':'bold',
-                                            'marginRight':'-8px'    
-                                        }
-                                    } />
+                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel"
+                                    // style={
+                                    //     {
+                                    //         'height': '50px',
+                                    //         'width': '180px',
+                                    //         'fontWeight':'bold',
+                                    //         'marginRight':'-8px'    
+                                    //     }
+                                    //} 
+                                    />
                                 </div>
                             </div>
                         </button>
