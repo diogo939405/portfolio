@@ -176,7 +176,7 @@
     transition: ease 0.5s;
 }
 
-.descricao{
+.legenda{
     display: none;
     justify-content: center;
     text-align: center;
@@ -214,10 +214,11 @@
 
  
 .descricao-texto{
-    margin-top: -80px;
+    /* margin-top: -180px; */
     font-size: 1.6rem;
     text-align:start;
     /* line-height: 19px; */
     line-height: 170%;
     font-family: 'Montserrat', sans-serif;
 }
+

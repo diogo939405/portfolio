@@ -16,10 +16,14 @@ const listaProjetos = [
 ]
 
 export const getDadosProjeto = (id) => {
-    let result = {}
+    let result = {
+        id: -1,
+        titulo: '',
+        texto: '',
+    }
     for (let index = 0; index < listaProjetos.length; index++) {
         const element = listaProjetos[index];
-        if (id == element.id) {
+        if (id === element.id) {
             result = element
         }
     }

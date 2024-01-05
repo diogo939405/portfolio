@@ -18,7 +18,12 @@ export default function blocoSobreMim() {
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         </p>
-                        <button className='botao' type='button'>Curriculo</button>
+                        
+                        <a href='CV - Diogoo (1).pdf' download="CV-Diogoo(1).p"
+                         type='application/pdf'>
+                        <button className='botao' type='button' >Curriculo</button>
+                        </a>
+                        
                         </div>
                     </div>
                     </div>

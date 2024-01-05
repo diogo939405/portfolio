@@ -3,9 +3,11 @@ import { Outlet } from 'react-router-dom'
 import './blocoProjetos.css'
 import './conteudo.js'
 import logoPuc from './imagensProjetos/brasao_puc-rio-removebg-preview.png'
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 import { Button } from 'primereact/button';
-        
+import 'primeicons/primeicons.css';
+
 import { getDadosProjeto } from './conteudo.js';
 
 
@@ -43,30 +45,41 @@ export default function BlocoProjetos() {
                 <h1 className='titulo-projetos' id='titu'>Projetos</h1>
                 <div className='main'>
                     <div className='circles' >
-                        
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(1) }} id='mostrar'>
                             <div className='circle' id='RB1'>
-                                <div className='descricao' id='descricao'>
+                                <div className='legenda' id='descricao'>
                                     <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                  
+                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" style={
+                                        {
+                                            'height': '50px',
+                                            'width': '180px',
+                                            'fontWeight':'bold',
+                                            'marginRight':'-8px'    
+                                        }
+                                    } />
                                 </div>
                             </div>
                         </button>
 
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(2) }} id='mostrar'>
                             <div className='circle' id='Puc'>
-                                <div className='descricao' id='descricao'>
+                                {/* <div className='legenda' id='descricao2'>
                                     <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                </div>
+                                </div> */}
                             </div>
-                            
+
                         </button>
-                        
-                        <button className='bot' onClick={() => { show(); setProjetoSelecionado(3) }} id='mostrar'>
+
+                        <button className='bot' onClick={() => { show(); setProjetoSelecionado(5) }} id='mostrar'>
+                            {/* <button className='bot-descricao'>oie</button> */}
                             <div className='circle' id='Puc'>
-                                <div className='descricao' id='descricao'>
-                                    <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                </div>
+                                {/* <div className='legenda' id='descricao3'>
+                                    <p className='descricao-texto'>teste {getDadosProjetos(projetoSelecionado).texto} Teste
+                                    </p>
+                                    <h1 className='descricao-texto'>teste</h1>
+                                </div> */}
+                                {/* <button className='bot-descricao'>oie</button> */}
+
                             </div>
                         </button>
                     </div>
