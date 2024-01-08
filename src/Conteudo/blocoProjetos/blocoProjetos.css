@@ -180,6 +180,7 @@
     display: none;
     justify-content: center;
     text-align: center;
+    /* flex-wrap: wrap; */
     /* position: relative; */
     /* flex-grow: 1; */
     height: 320px;
@@ -187,7 +188,7 @@
     background: #4a4a4a63;
     padding: 20px;
     margin-top: 240px;
-    margin-left: -160px;
+    margin-left: -140px;
     border-radius: 10px;
     margin-bottom: 40px;
     transition: .3s;
@@ -214,9 +215,12 @@
 
  
 .descricao-texto{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
     /* margin-top: -180px; */
-    font-size: 1.6rem;
-    text-align:start;
+    font-size: 1.8rem;
+    text-align:left;
     /* line-height: 19px; */
     line-height: 170%;
     font-family: 'Montserrat', sans-serif;
@@ -226,49 +230,69 @@
 .p-button {
     display: flex;
     justify-content:flex-end;
-    align-items: center;
-    position: relative;
-    left: 15vw;
-    top: -10px;
-    background: none;
-    width: 150px;
+    align-items:flex-end;
+    /* position: relative; */
+    position: fixed;
+    left: 105vw;
+    top: 3px;
+    background: red;
+    width: 40px;
     box-shadow: none;
     padding: 0px;
+    border-radius: 50%;
+
+
 }
 .p-button-icon{
     font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 2px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+
 }
 
 .p-button:hover{
-    background-color: rgb(245, 46, 46);   
+    background-color: rgba(131, 67, 67, 0.379);   
 }
 .p-button#projeto{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 35vh;
+    top: 40vh;
     left: 41vw;
     border: solid white 3px;
     color: rgb(212, 209, 209);
     background: none;
     width: 250px;
-    height: 32px;
+    height: 45px;
     font-size: 1.5rem;
     padding: 2px;
     transition: 0.5s ease;
-    padding: 10px;
 }
 /* .p-button-text#projeto{
     padding: 10px;
 }	 */
-.p-button#projeto:hover{
+/* .p-button#projeto:hover{
     background-color: rgb(140, 207, 39);
+} */
+.third{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20vh;
+    width: 250px;
+    height: 45px;
+    font-size: 1.5rem;
+    padding: 2px;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
-a{
-    outline: none;
+.third:hover{
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }

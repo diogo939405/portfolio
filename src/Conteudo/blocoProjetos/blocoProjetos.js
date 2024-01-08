@@ -8,13 +8,13 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { Button } from 'primereact/button';
 import 'primeicons/primeicons.css';
 
-import {Url} from './link'
+import { Url } from './link'
 import { getDadosProjeto } from './conteudo.js';
 
 
 let rlu = Url
 export default function BlocoProjetos() {
-    const [projetoSelecionado, setProjetoSelecionado] = useState(-1);    
+    const [projetoSelecionado, setProjetoSelecionado] = useState(-1);
 
     // let projeselecionado = -1;
     let getDadosProjetos = getDadosProjeto
@@ -31,7 +31,7 @@ export default function BlocoProjetos() {
 
     const hide = () => {
         let h = document.getElementById('descricao')
-        if(h.style.display ==="flex"){
+        if (h.style.display === "flex") {
             h.style.display = 'none'
         }
         // let t = document.getElementById('titu')
@@ -53,34 +53,32 @@ export default function BlocoProjetos() {
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(1) }} id='mostrar'>
                             <div className='circle' id='RB1'>
                                 <div className='legenda' id='descricao'>
-                                    <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide}/>
-                                    <a onClick={rlu}>
-                                    <Button label="Projeto" severity="secondary" outlined id='projeto'>
-                                    </Button>
-                                    </a>
+                                    <p className='descricao-texto' id='cancelar'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide} />                             
+                                    {/* <Button label="Projeto" severity="secondary" outlined id='projeto'   onClick={() =>{window.location.href = rlu}}>
+                                    </Button> */}
+                                    {/* <button class="btn third">Button 3</button> */}
                                 </div>
                             </div>
                         </button>
 
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(2) }} id='mostrar'>
                             <div className='circle' id='Puc'>
-                                {/* <div className='legenda' id='descricao2'>
-                                    <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                </div> */}
+                                <div className='legenda' id='descricao'>
+                                <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide} />
+                                 <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                </div>
                             </div>
 
                         </button>
 
-                        <button className='bot' onClick={() => { show(); setProjetoSelecionado(5) }} id='mostrar'>
-                            {/* <button className='bot-descricao'>oie</button> */}
+                        <button className='bot' onClick={() => { show(); setProjetoSelecionado(3) }} id='mostrar'>
                             <div className='circle' id='Puc'>
-                                {/* <div className='legenda' id='descricao3'>
-                                    <p className='descricao-texto'>teste {getDadosProjetos(projetoSelecionado).texto} Teste
-                                    </p>
-                                    <h1 className='descricao-texto'>teste</h1>
-                                </div> */}
-                                {/* <button className='bot-descricao'>oie</button> */}
+                                <div className='legenda' id='descricao'>
+                                    <p className='descricao-texto'>teste {getDadosProjetos(projetoSelecionado).texto}                       </p>
+
+                                </div>
+
 
                             </div>
                         </button>
