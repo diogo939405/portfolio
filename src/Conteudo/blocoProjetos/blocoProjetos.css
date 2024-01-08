@@ -224,7 +224,51 @@
 
 
 .p-button {
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: relative;
+    left: 15vw;
+    top: -10px;
+    background: none;
+    width: 150px;
+    box-shadow: none;
+    padding: 0px;
+}
+.p-button-icon{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+}
+
+.p-button:hover{
+    background-color: rgb(245, 46, 46);   
+}
+.p-button#projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 35vh;
+    left: 41vw;
+    border: solid white 3px;
+    color: rgb(212, 209, 209);
+    background: none;
+    width: 250px;
+    height: 32px;
+    font-size: 1.5rem;
+    padding: 2px;
+    transition: 0.5s ease;
+    padding: 10px;
+}
+/* .p-button-text#projeto{
+    padding: 10px;
+}	 */
+.p-button#projeto:hover{
+    background-color: rgb(140, 207, 39);
+}
+
+a{
+    outline: none;
 }

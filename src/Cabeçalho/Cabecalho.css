@@ -90,13 +90,13 @@
     text-decoration: none;
 }
 
-.corpo-menu li a {
+.corpo-menu li .link-menu{
     position: relative;
     padding: 18px;
     display: inline;
 }
 
-a {
+.link-menu {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -105,7 +105,7 @@ a {
     z-index: 1;
 }
 
-a::after {
+.link-menu::after {
     content: "";
     height: 3px;
     width: 100%;
@@ -114,15 +114,16 @@ a::after {
     bottom: 10px;
     position: absolute;
     opacity: 0;
+    text-decoration: none;
 }
 
-a:hover::after {
+.link-menu:hover::after {
     opacity: 1;
 
 }
 
 @media only screen and (max-width: 800px) {
-    a {
+    .link-menu{
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -162,7 +163,7 @@ a:hover::after {
 
     @media only screen and (max-width: 620px) {
 
-        a {
+        .link-menu {
             font-size: 14px;
             padding-right: 30px;
 
@@ -174,12 +175,12 @@ a:hover::after {
         }
     }
     @media only screen and (max-width: 620px) {
-        a {
+        .link-menu {
             font-size: 14px;
             padding-right: 20px;
 
         }
-        .corpo-menu li a {
+        .corpo-menu li .link-menu {
             position: relative;
             padding: 12px;
             display: inline;
@@ -188,7 +189,7 @@ a:hover::after {
             font-size: 12px;
             left: 23px;
         }
-        a::after {
+        .link-menu::after {
             content: "";
             height: 2px;
             width: 90%;

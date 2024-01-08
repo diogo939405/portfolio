@@ -8,12 +8,14 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { Button } from 'primereact/button';
 import 'primeicons/primeicons.css';
 
+import {Url} from './link'
 import { getDadosProjeto } from './conteudo.js';
 
 
-
+let rlu = Url
 export default function BlocoProjetos() {
-    const [projetoSelecionado, setProjetoSelecionado] = useState(-1);
+    const [projetoSelecionado, setProjetoSelecionado] = useState(-1);    
+
     // let projeselecionado = -1;
     let getDadosProjetos = getDadosProjeto
     const show = () => {
@@ -28,7 +30,10 @@ export default function BlocoProjetos() {
     }
 
     const hide = () => {
-        let y = document.getElementById('dialogo')
+        let h = document.getElementById('descricao')
+        if(h.style.display ==="flex"){
+            h.style.display = 'none'
+        }
         // let t = document.getElementById('titu')
         // t.style.display = 'block'
         // y.close()
@@ -49,16 +54,11 @@ export default function BlocoProjetos() {
                             <div className='circle' id='RB1'>
                                 <div className='legenda' id='descricao'>
                                     <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel"
-                                    // style={
-                                    //     {
-                                    //         'height': '50px',
-                                    //         'width': '180px',
-                                    //         'fontWeight':'bold',
-                                    //         'marginRight':'-8px'    
-                                    //     }
-                                    //} 
-                                    />
+                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide}/>
+                                    <a onClick={rlu}>
+                                    <Button label="Projeto" severity="secondary" outlined id='projeto'>
+                                    </Button>
+                                    </a>
                                 </div>
                             </div>
                         </button>

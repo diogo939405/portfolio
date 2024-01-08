@@ -17,17 +17,17 @@ export default function Cabecalho() {
                         <ul className='corpo-menu'>
                             <li>
                                 <Link to='#sobre' smooth >
-                                    <a> Sobre mim</a>
+                                    <a className='link-menu'> Sobre mim</a>
                                 </Link>
                             </li>
                             <li >
                                 <Link to='#secao' smooth>
-                                    <a>Linguagens</a>
+                                <a className='link-menu' style={{'text-decoration' : 'none'}}>Linguagens</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link to='#projetos' smooth>
-                                    <a>Projetos</a>
+                                <a className='link-menu'>Projetos</a>
                                 </Link>
 
                             </li>
