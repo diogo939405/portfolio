@@ -103,7 +103,8 @@
     align-items: center;
     margin-top: 15px;
     font-size: 1.8rem;
-    color: rgba(208, 241, 158, 0.972);
+    color:  rgba(172, 255, 47, 0.694);
+    font-weight: 400;
 }
 
 .html {

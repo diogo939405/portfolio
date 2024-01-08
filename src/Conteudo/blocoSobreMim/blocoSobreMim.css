@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 * {
@@ -29,9 +31,17 @@
     }
 }
 
+.imagem-botões{
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
 .about img {
-    height: auto;
-    width: 420px;
+    height: 400px;
+    width: 350px;
+    border: 2px solid rgba(159, 158, 158, 0.625);
+    /* border-radius: 100%; */
 }
 
 .about-text {
@@ -48,7 +58,8 @@
 }
 
 .front {
-    color: rgb(240, 10, 10);
+    color: rgba(172, 255, 47, 0.694);
+    font-weight: 600;
 }
 
 .about-text h1 {
@@ -78,12 +89,24 @@
 }
 
 .botao {
-    background: greenyellow;
-    color: white;
+    margin-left: 55px;
+    margin-top: 18px;
+    width: 250px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     text-decoration: none;
-    border: 10px solid transparent;
-    font-weight: bold;
-    border-radius: 30px;
+    font-size: 1.5rem;
+    background-color: rgba(172, 255, 47, 0.694);
+    padding: 5px;
+    border: 2px solid rgb(212, 211, 211);
+    border-radius: 10px;
+    transition: 0.5s ease-in;
     cursor: pointer;
-    transition: .4s;
 }
+
+.botao:hover{
+    background-color: rgba(172, 255, 47, 0);
+    color: rgb(132, 195, 37);
+}
+

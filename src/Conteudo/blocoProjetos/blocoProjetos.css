@@ -226,72 +226,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-.p-button {
-    display: flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    /* position: relative; */
-    left: 105vw;
-    top: 3px;
-    background: red;
-    width: 40px;
-    box-shadow: none;
-    padding: 0px;
-    border-radius: 50%;
-
-
-}
-.p-button-icon{
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 4px;
-    margin-bottom: 5px;
-
-}
-
-.p-button:hover{
-    background-color: rgba(131, 67, 67, 0.379);   
-}
-.p-button#projeto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 40vh;
-    left: 41vw;
-    border: solid white 3px;
-    color: rgb(212, 209, 209);
-    background: none;
-    width: 250px;
-    height: 45px;
+.link-projeto{
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
     font-size: 1.5rem;
-    padding: 2px;
-    transition: 0.5s ease;
+    background-color: rgba(172, 255, 47, 0.694);
+    padding: 5px;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+   
 }
-/* .p-button-text#projeto{
-    padding: 10px;
-}	 */
-/* .p-button#projeto:hover{
-    background-color: rgb(140, 207, 39);
-} */
-.third{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 20vh;
-    width: 250px;
-    height: 45px;
-    font-size: 1.5rem;
-    padding: 2px;
-    border-color: #3498db;
-    color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-}
-
-.third:hover{
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+.link-projeto:hover{
+    background-color: rgba(172, 255, 47, 0);
+    color: rgb(132, 195, 37);
 }

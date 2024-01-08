@@ -90,13 +90,13 @@
     text-decoration: none;
 }
 
-.corpo-menu li .link-menu{
+.corpo-menu li a{
     position: relative;
     padding: 18px;
     display: inline;
 }
 
-.link-menu {
+a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -117,13 +117,13 @@
     text-decoration: none;
 }
 
-.link-menu:hover::after {
+a:hover::after {
     opacity: 1;
 
 }
 
 @media only screen and (max-width: 800px) {
-    .link-menu{
+    a{
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -163,7 +163,7 @@
 
     @media only screen and (max-width: 620px) {
 
-        .link-menu {
+        a{
             font-size: 14px;
             padding-right: 30px;
 
@@ -175,12 +175,12 @@
         }
     }
     @media only screen and (max-width: 620px) {
-        .link-menu {
+        .a{
             font-size: 14px;
             padding-right: 20px;
 
         }
-        .corpo-menu li .link-menu {
+        .corpo-menu li a{
             position: relative;
             padding: 12px;
             display: inline;
@@ -189,7 +189,7 @@
             font-size: 12px;
             left: 23px;
         }
-        .link-menu::after {
+        a::after {
             content: "";
             height: 2px;
             width: 90%;

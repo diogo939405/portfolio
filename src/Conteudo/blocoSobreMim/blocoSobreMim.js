@@ -1,15 +1,20 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import './blocoSobreMim.css'
-
+import fotoPerfil from './IMG_20230920_092144 (1).jpg'
 export default function blocoSobreMim() {
     return (
         <div id='sobre'>
                 <section >
                 <div className='about'>
                     <div className='main'>
-                        <img src='../../imagens/IMG_20231011_131628.jpg'
+                        <div className='imagem-botões'>
+                        <img src={fotoPerfil}
                             alt=''></img>
+                            <br/>
+                              <button className='botao' type='button' >Currículo</button>
+                        </div>
+                       
                         <div className='about-text'>
                         <h1>Sobre mim</h1>
                         <h5>Desenvolvedor <span className='front'>Frontend</span> </h5>
@@ -18,11 +23,6 @@ export default function blocoSobreMim() {
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         </p>
-                        
-                        <a href='CV - Diogoo (1).pdf' download="CV-Diogoo(1).p"
-                         type='application/pdf'>
-                        <button className='botao' type='button' >Curriculo</button>
-                        </a>
                         
                         </div>
                     </div>

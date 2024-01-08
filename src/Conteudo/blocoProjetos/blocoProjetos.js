@@ -21,7 +21,7 @@ export default function BlocoProjetos() {
     const show = () => {
         let d = document.getElementById('descricao')
         if (d.style.display === "none") {
-            d.style.display = 'flex'
+            d.style.display = 'block'
         } else {
             d.style.display = 'none'
         }
@@ -53,11 +53,12 @@ export default function BlocoProjetos() {
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(1) }} id='mostrar'>
                             <div className='circle' id='RB1'>
                                 <div className='legenda' id='descricao'>
-                                    <p className='descricao-texto' id='cancelar'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide} />                             
-                                    {/* <Button label="Projeto" severity="secondary" outlined id='projeto'   onClick={() =>{window.location.href = rlu}}>
-                                    </Button> */}
-                                    {/* <button class="btn third">Button 3</button> */}
+                                    <div style={{ "display": "block" }}>
+                                        <p className='descricao-texto' id='cancelar'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                        <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link}>Acesse o Projeto</a>
+                                        <br/>
+                                        {/* <span>Clique aqui no quadro para fechar</span> */}
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -65,8 +66,8 @@ export default function BlocoProjetos() {
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(2) }} id='mostrar'>
                             <div className='circle' id='Puc'>
                                 <div className='legenda' id='descricao'>
-                                <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide} />
-                                 <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide} />
+                                    <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
                                 </div>
                             </div>
 

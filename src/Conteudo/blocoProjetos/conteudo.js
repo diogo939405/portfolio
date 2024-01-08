@@ -2,15 +2,18 @@ const listaProjetos = [
     {
         id: 1,
         titulo: 'Meu primeiro projeto',
-        texto: 'diogooooooooooooooooooooooooO projeto WordPress para o condomínio RB1 apresenta uma solução integrada com recursos avançados de gestão de usuários, implementando API em Node.js para comunicação eficiente entre o front-end em React.js e o WordPress. Essa abordagem permite uma administração independente. A intergração das APIs (wordpress e minha) permitiram esta flexibilização eficaz da gestão de usuários.',
+        texto: 'projeto WordPress para o condomínio RB1 apresenta uma solução integrada com recursos avançados de gestão de usuários, implementando API em Node.js para comunicação eficiente entre o front-end em React.js e o WordPress. Essa abordagem permite uma administração independente. A intergração das APIs (wordpress e minha) permitiram esta flexibilização eficaz da gestão de usuários.',
+        link: 'http://google.com.br'
     }, {
         id: 2,
         titulo: '222Meu primeiro projeto',
         texto: 'Texto do item 2',
+        link: 'http://google.com',
     }, {
         id: 3,
         titulo: '3333Meu primeiro projeto',
         texto: 'Texto do item 3',
+        link: 'http://google.com',
     },
 
 ]
