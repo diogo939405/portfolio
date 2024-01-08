@@ -232,7 +232,6 @@
     justify-content:flex-end;
     align-items:flex-end;
     /* position: relative; */
-    position: fixed;
     left: 105vw;
     top: 3px;
     background: red;
