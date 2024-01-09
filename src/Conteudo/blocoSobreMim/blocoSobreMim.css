@@ -87,9 +87,9 @@
 }
 
 .botao {
-    margin-left: 55px;
+    /* margin-left: 55px; */
     margin-top: 18px;
-    width: 250px;
+    width: 100%;
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

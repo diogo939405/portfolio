@@ -59,7 +59,6 @@ export default function BlocoProjetos() {
                                             <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesso ao Projeto</a>
                                             <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Frontend</a>
                                             <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Backend</a>
-                                            <br />
                                         </div>
 
                                         {/* <span>Clique aqui no quadro para fechar</span> */}
@@ -71,8 +70,12 @@ export default function BlocoProjetos() {
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(2) }} id='mostrar'>
                             <div className='circle' id='Puc'>
                                 <div className='legenda' id='descricao'>
-                                    <Button icon="pi pi-times" rounded text severity="danger" aria-label="Cancel" onClick={hide} />
                                     <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                    <div className='botoes-descricao'>
+                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesso ao Projeto</a>
+                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Frontend</a>
+                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Backend</a>
+                                        </div>
                                 </div>
                             </div>
 

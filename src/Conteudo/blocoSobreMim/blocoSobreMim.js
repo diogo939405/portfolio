@@ -17,7 +17,8 @@ export default function blocoSobreMim() {
 
                         <div className='about-text'>
                             <h1>Sobre mim</h1>
-                            <h5>Desenvolvedor <span className='front'>Frontend</span> </h5>
+                            <h5>Contato: Diogo.Favilla@gmail.com</h5>
+                            <h5>Telefone:21-97360-7207</h5>
                             <p>
                                 Meu nome é Diogo Favilla G. Jacintho tenho 22 anos e sou um profissional dedicado e fluente em inglês (formado), recém-formado em Análise e Desenvolvimento de Sistemas.
                                 Nesta curta caminhada obtive sucessos como por exemplo Site da Associação da Polícia Federal, Loja virtual de artigos históricos entre outros nos quais tive co-participação. Diversos cursos com certificação e vários projetos pessoais (como este portfolio) que agregam valor a minha experiência.                            </p>
