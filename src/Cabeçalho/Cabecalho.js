@@ -12,7 +12,7 @@ export default function Cabecalho() {
                     <nav className='navbar'>
                         <p className='titulo'>
                             <img src={logo} height='60px' width='60px' alt='oie' className='logo-img'></img>
-                            <h4 className='logo-texto'>Diogo Favilla system developer</h4>
+                            <h4 className='logo-texto'>Diogo Favilla System Developer</h4>
                         </p>
                         <ul className='corpo-menu'>
                             <li>
@@ -22,12 +22,12 @@ export default function Cabecalho() {
                             </li>
                             <li >
                                 <Link to='#secao' smooth>
-                                <a className='link-menu' style={{'text-decoration' : 'none'}}>Linguagens</a>
+                                    <a className='link-menu' style={{ 'text-decoration': 'none' }}>Linguagens</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link to='#projetos' smooth>
-                                <a className='link-menu'>Projetos</a>
+                                    <a className='link-menu'>Projetos</a>
                                 </Link>
 
                             </li>
