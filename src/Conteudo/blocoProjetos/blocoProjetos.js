@@ -56,6 +56,7 @@ export default function BlocoProjetos() {
                                     <div style={{ "display": "block" }}>
                                         <p className='descricao-texto' id='cancelar'>{getDadosProjetos(projetoSelecionado).texto}</p>
                                         <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesse o Projeto</a>
+                                        <a  href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">gitHUb</a>
                                         <br/>
                                         {/* <span>Clique aqui no quadro para fechar</span> */}
                                     </div>
