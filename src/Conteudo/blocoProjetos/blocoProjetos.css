@@ -61,6 +61,12 @@
     margin-bottom: 150px;
     
 }
+#Barbara{
+    background-image: url('./imagensProjetos/414692974_780876667414459_5950248591951011380_n.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -90px;
+}
 
 #Puc {
     background-image: url('./imagensProjetos/brasao_puc-rio-removebg-preview.png');

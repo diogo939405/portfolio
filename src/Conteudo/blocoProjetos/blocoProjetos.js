@@ -74,7 +74,7 @@ export default function BlocoProjetos() {
                         </button>
 
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(3) }} id='mostrar'>
-                            <div className='circle' id='Puc'>
+                            <div className='circle' id='Barbara'>
                                 <div className='legenda' id='descricao'>
                                     <p className='descricao-texto'>teste {getDadosProjetos(projetoSelecionado).texto}                       </p>
 
