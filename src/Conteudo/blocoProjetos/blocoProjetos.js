@@ -54,14 +54,12 @@ export default function BlocoProjetos() {
                             <div className='circle' id='RB1'>
                                 <div className='legenda' id='descricao'>
                                     <div style={{ "display": "block" }}>
-                                        <p className='descricao-texto' id='cancelar'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                        <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
                                         <div className='botoes-descricao'>
                                             <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesso ao Projeto</a>
                                             <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Frontend</a>
                                             <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Backend</a>
                                         </div>
-
-                                        {/* <span>Clique aqui no quadro para fechar</span> */}
                                     </div>
                                 </div>
                             </div>
@@ -70,12 +68,12 @@ export default function BlocoProjetos() {
                         <button className='bot' onClick={() => { show(); setProjetoSelecionado(2) }} id='mostrar'>
                             <div className='circle' id='Puc'>
                                 <div className='legenda' id='descricao'>
-                                    <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
+                                    {/* <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p> */}
                                     <div className='botoes-descricao'>
-                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesso ao Projeto</a>
-                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Frontend</a>
-                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Backend</a>
-                                        </div>
+                                        <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesso ao Projeto</a>
+                                        <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Frontend</a>
+                                        <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Backend</a>
+                                    </div>
                                 </div>
                             </div>
 
