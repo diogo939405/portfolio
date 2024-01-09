@@ -55,9 +55,13 @@ export default function BlocoProjetos() {
                                 <div className='legenda' id='descricao'>
                                     <div style={{ "display": "block" }}>
                                         <p className='descricao-texto' id='cancelar'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                        <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesse o Projeto</a>
-                                        <a  href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">gitHUb</a>
-                                        <br/>
+                                        <div className='botoes-descricao'>
+                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesso ao Projeto</a>
+                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Frontend</a>
+                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Backend</a>
+                                            <br />
+                                        </div>
+
                                         {/* <span>Clique aqui no quadro para fechar</span> */}
                                     </div>
                                 </div>

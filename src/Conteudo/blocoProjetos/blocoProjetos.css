@@ -189,7 +189,7 @@
     /* flex-wrap: wrap; */
     /* position: relative; */
     /* flex-grow: 1; */
-    height: 320px;
+    height: 350px;
     width: 1500px;
     background: #4a4a4a63;
     padding: 20px;
@@ -230,6 +230,15 @@
     /* line-height: 19px; */
     line-height: 170%;
     font-family: 'Montserrat', sans-serif;
+}
+
+.botoes-descricao{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 15px;
+    /* align-items: center; */
+    /* width: 100vw; */
+    
 }
 
 .link-projeto{

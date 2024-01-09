@@ -3,7 +3,7 @@ const listaProjetos = [
         id: 1,
         titulo: 'Meu primeiro projeto',
         texto: 'projeto WordPress para o condomínio RB1 apresenta uma solução integrada com recursos avançados de gestão de usuários, implementando API em Node.js para comunicação eficiente entre o front-end em React.js e o WordPress. Essa abordagem permite uma administração independente. A intergração das APIs (wordpress e minha) permitiram esta flexibilização eficaz da gestão de usuários.',
-        git: "https://www.google.com/",
+        git: "https://github.com/diogo939405/crud_remove",
         link: 'https://rb1-condominio-extranet.netlify.app'
     }, {
         id: 2,
