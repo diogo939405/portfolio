@@ -36,8 +36,8 @@
 }
 
 .about img {
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 450px;
     border: 2px solid rgba(159, 158, 158, 0.625);
     /* border-radius: 100%; */
 }

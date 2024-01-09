@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import './blocoSobreMim.css'
-import fotoPerfil from './IMG_20230920_092144 (1).jpg'
+import fotoPerfil from './perfil.jpeg'
 export default function blocoSobreMim() {
     return (
         <div id='sobre'>
