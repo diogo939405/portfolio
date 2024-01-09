@@ -55,7 +55,7 @@ export default function BlocoProjetos() {
                                 <div className='legenda' id='descricao'>
                                     <div style={{ "display": "block" }}>
                                         <p className='descricao-texto' id='cancelar'>{getDadosProjetos(projetoSelecionado).texto}</p>
-                                        <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link}>Acesse o Projeto</a>
+                                        <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).link} target="_blank" rel="noopener noreferrer">Acesse o Projeto</a>
                                         <br/>
                                         {/* <span>Clique aqui no quadro para fechar</span> */}
                                     </div>

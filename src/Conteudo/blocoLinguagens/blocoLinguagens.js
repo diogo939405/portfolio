@@ -11,9 +11,10 @@ import logoAngular from './imagensLinguagens/png-transparent-angularjs-spring-fr
 import logoMysql  from  './imagensLinguagens/kisspng-mysql-database-web-development-computer-icons-mysql-5b2cc2f2df70e6.4579243815296601469152-removebg-preview.png'
 import logoPostgree from  './imagensLinguagens/62cdccb0e106734e1ce200aa-removebg-preview.png' 
 import logoWordPress  from  './imagensLinguagens/download__1_-removebg-preview.png'
-import logoApi  from  './imagensLinguagens/download__1_-removebg-preview.png'
+import logoApi  from  './imagensLinguagens/logoapi.png'
 import logoDart from  './imagensLinguagens/images-removebg-preview.png'
 import logoFlutter  from  './imagensLinguagens/Google-flutter-logo-removebg-preview.png'
+
 
 export default function blocoLinguagens() {
 

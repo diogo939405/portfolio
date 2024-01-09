@@ -17,8 +17,9 @@
 }
 
 .titulo {
-    position: fixed;
-    left: 100px;
+    position: relative;
+    right: 70%;
+    /* left: 100px; */
     margin-top: 5px;
     justify-content: flex-start;
     text-decoration: none;
@@ -29,9 +30,9 @@
     display: flex;
     flex-wrap: nowrap;
 }
-.titulo:hover{
+/* .titulo:hover{
     background-color: blanchedalmond;
-}
+} */
 .logo-texto{
     line-height: 60px;
     margin-left: 20px;
@@ -122,58 +123,57 @@ a:hover::after {
 
 }
 
+@media only screen and (max-width: 1110px) {
+    .titulo{
+        right: 60%;
+        font: normal 700 15px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    ;
+    
+    }
+    a{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .titulo{
+        right: 60%;
+        font: normal 700 14px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    ;
+    }
+    a{
+        font-size: 14px;
+    }
+}
 @media only screen and (max-width: 800px) {
     a{
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
-        font-size: 16px;
+        font-size: 13px;
         color: var(--terciaria);
     }
 
    .titulo{
     display: flex;
     flex-wrap: nowrap;
+    font: normal 700 14px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    ;
+    right: 30%;
 }
-
+.logo-img{
+    height: 40px;
+    width: 40px;
+}
 .logo-texto{
-    line-height: 60px;
-    margin-left: 20px;
-    position: relative;
-    /* border-right: 2px solid ; */
-    width: 25ch;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: digitando 2.5s steps(25),
-    span 0,5s infinite step-end;
-}
-.logo-texto::after{
-    border-right: 0px;
+    line-height: 40px;
+    margin-left: 10px;
 }
 
-@keyframes digitando{
-    from{
-        width: 0;
-    }
-}
-@keyframes span{
-    50%{
-        border-color: transparent;
-    }
+.corpo-menu{
+    line-height: 90px;
+    right: 20%;
 }
 
-    @media only screen and (max-width: 620px) {
-
-        a{
-            font-size: 14px;
-            padding-right: 30px;
-
-        }
-
-        .titulo {
-            font-size: 14px;
-            left: 23px;
-        }
-    }
+   
     @media only screen and (max-width: 620px) {
         .a{
             font-size: 14px;
@@ -185,10 +185,13 @@ a:hover::after {
             padding: 12px;
             display: inline;
         }
-        .titulo {
-            font-size: 12px;
-            left: 23px;
-        }
+        .titulo{
+            display: flex;
+            flex-wrap: nowrap;
+            font: normal 700 13px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+            ;
+            right: 25%;}
+
         a::after {
             content: "";
             height: 2px;
@@ -199,5 +202,17 @@ a:hover::after {
             position: absolute;
             opacity: 0;
         }
+    }
+
+    @media only screen and (max-width: 390px) {
+        .titulo{
+            display: flex;
+            flex-wrap: nowrap;
+            font: normal 700 14px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+            ;
+            right: 10%;}
+    }
+    .corpo-menu{
+        display: none;
     }
 }
