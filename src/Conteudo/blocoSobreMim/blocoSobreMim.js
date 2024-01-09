@@ -12,7 +12,7 @@ export default function blocoSobreMim() {
                             <img src={fotoPerfil}
                                 alt=''></img>
                             <br />
-                            <button className='botao' type='button' >Currículo</button>
+                           <a href='https://drive.google.com/file/d/1Z1s60J10dpj8gx0744EPqMPSZoiITOaX/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <button className='botao' type='button' >Currículo</button> </a>
                         </div>
 
                         <div className='about-text'>
