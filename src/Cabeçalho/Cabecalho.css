@@ -137,7 +137,7 @@ a:hover::after {
 }
 @media only screen and (max-width: 980px) {
     .titulo{
-        right: 60%;
+        right: 50%;
         font: normal 700 14px "Roboto", Helvetica, Arial, Verdana, sans-serif;
     ;
     }

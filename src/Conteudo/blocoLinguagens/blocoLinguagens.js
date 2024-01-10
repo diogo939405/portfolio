@@ -32,7 +32,7 @@ export default function blocoLinguagens() {
     <div>
       <section className='secao' id='secao'>
         <div className='container' id='container1'>
-          <h1 className='titulo-skills'>Skills titulo</h1>
+          <h1 className='titulo-skills'>Skills</h1>
 
           <div className='cards'>
             <div className='card'>
