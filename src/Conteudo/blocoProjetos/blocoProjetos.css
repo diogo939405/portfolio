@@ -283,6 +283,7 @@
     font-weight: 400;
     margin-left: 6px;
     margin-bottom: 5px;
+    color: rgb(32, 32, 32);
 }
 
 .p-toast-message-content{
@@ -294,6 +295,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .p-toast-message{

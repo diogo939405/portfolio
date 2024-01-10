@@ -73,7 +73,7 @@ export default function BlocoProjetos() {
         toast.current.show({
             severity: 'info',
             summary: 'Atenção',
-            detail: 'Devido ao fato de ser um projeto que contém dados vitais ao cliente, não foi possível liberar o código fonte de forma pública, caso queira acessar entrar em contato',
+            detail: 'Devido ao fato de ser um projeto que contém dados vitais ao cliente, não foi possível liberar o código fonte de forma pública, caso queira acessar entrar em contato.',
             life: 30000
         });
     }
