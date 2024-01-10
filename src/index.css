@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url('./imagens/testen.jpg');
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   min-height: 100vh;

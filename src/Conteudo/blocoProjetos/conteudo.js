@@ -26,6 +26,8 @@ export const getDadosProjeto = (id) => {
         id: -1,
         titulo: '',
         texto: '',
+        link:'',
+        
     }
     for (let index = 0; index < listaProjetos.length; index++) {
         const element = listaProjetos[index];

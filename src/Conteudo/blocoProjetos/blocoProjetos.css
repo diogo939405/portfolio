@@ -257,3 +257,13 @@
     background-color: rgba(172, 255, 47, 0);
     color: rgb(132, 195, 37);
 }
+
+.aviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
