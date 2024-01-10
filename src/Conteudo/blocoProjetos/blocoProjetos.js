@@ -26,23 +26,23 @@ export default function BlocoProjetos() {
     const redirecionar = () => {
         let novaUrl = getDadosProjetos(projetoSelecionado).link
 
-        if(novaUrl === ''){
+        if (novaUrl === '') {
             return showInfo()
-        }else{
-            
+        } else {
+
             window.location.href = novaUrl
             const novaAba = window.open(novaUrl, '_blank');
-    
+
             if (novaAba) {
                 novaAba.focus();
             } else {
                 console.error('O bloqueio de pop-up pode ter impedido a abertura da nova aba.');
-    
+
             }
         }
-        }
+    }
 
-     
+
 
     const aviso = () => {
         if (getDadosProjetos(projetoSelecionado).git === '') {
@@ -53,8 +53,8 @@ export default function BlocoProjetos() {
 
     }
 
-     const redirecionarGit = () =>{
-        
+    const redirecionarGit = () => {
+
         let novaUrla = getDadosProjetos(projetoSelecionado).git
 
         window.location.href = novaUrla
@@ -67,10 +67,15 @@ export default function BlocoProjetos() {
 
         }
 
-     }
+    }
 
     const showInfo = () => {
-        toast.current.show({ severity: 'warn', summary: 'Atenção', detail: 'Devido ao fato de ser um projeto que contém dados vitais ao cliente, não foi possível liberar o código fonte de forma pública, caso queira acessar entrar em contato', life: 6000 });
+        toast.current.show({
+            severity: 'info',
+            summary: 'Atenção',
+            detail: 'Devido ao fato de ser um projeto que contém dados vitais ao cliente, não foi possível liberar o código fonte de forma pública, caso queira acessar entrar em contato',
+            life: 30000
+        });
     }
 
     return (
@@ -95,7 +100,7 @@ export default function BlocoProjetos() {
                                             <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={aviso}>Codigo do Frontend</button>
                                             <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={aviso}>Codigo do Backend</button>
                                         </div>
-                                        <span className='aviso'>*Pode ocorrer de não abrir em outra guia devido a política de segurança do browse</span>
+                                        <span className='aviso'>*Pode ocorrer de não abrir em outra guia, ao clicar o botão, devido a política de segurança do browse</span>
                                     </div>
 
                                 </div>

@@ -275,10 +275,27 @@
     z-index: 1;
 }
 
-.p-toast-container {
-    width: 50px;
-    height: 50px;
+.p-toast-detail{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 6px;
+    margin-bottom: 5px;
 }
-.p-toast-item{
-    font-size: 0.5rem;
+
+.p-toast-message-content{
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.p-toast-summary{
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-toast-message{
+    
 }
