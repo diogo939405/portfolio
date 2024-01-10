@@ -17,7 +17,7 @@ export default function blocoSobreMim() {
 
                         <div className='about-text'>
                             <h1>Sobre mim</h1>
-                            <h5>Contato: Diogo.Favilla@gmail.com</h5>
+                            <h5>Diogo.Favilla@gmail.com</h5>
                             <h5>Telefone:21-97360-7207</h5>
                             <p>
                                 Meu nome é Diogo Favilla G. Jacintho tenho 22 anos e sou um profissional dedicado e fluente em inglês (formado), recém-formado em Análise e Desenvolvimento de Sistemas.
