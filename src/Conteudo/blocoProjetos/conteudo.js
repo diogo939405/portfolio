@@ -15,7 +15,7 @@ const listaProjetos = [
     }, {
         id: 3,
         titulo: '3333Meu primeiro projeto',
-        texto: 'Conjunto de soluções Mobile e Web(Admin). Visa a integração entre os paroquianos através do uso de app que possue diversas informações como: Avisos paroquiais, agenda anual, informações (com mapa de localização) de todas as paroquias do Rio de Janeiro além de um game de Quiz com perguntas religiosas. Neste projeto pude participar em quase todas as etapas: FrontEnd Flutter, Web Angular, Database FireStore. Projeto ainda em fase de testes, segue o login e senha para acesso ; Login:     / Senha: ',
+        texto: 'Conjunto de soluções Mobile e Web(Admin). Visa a integração entre os paroquianos através do uso de app que possue diversas informações como: Avisos paroquiais, agenda anual, informações (com mapa de localização) de todas as paroquias do Rio de Janeiro além de um game de Quiz com perguntas religiosas. Neste projeto pude participar em quase todas as etapas: FrontEnd Flutter, Web Angular, Database FireStore. Projeto ainda em fase de desenvolvimento, segue o login e senha para acesso ; Login:teste@123  / Senha:123456 ',
         git: '',
         link: 'https://admparoquia.netlify.app/',
     },
