@@ -23,28 +23,26 @@ export default function BlocoProjetos() {
         }
     }
 
-    const redirecionar = () => {
-
+    const redirecionar = (url) => {
+console.log('url   ', url)
         let novaUrl = getDadosProjetos(projetoSelecionado).link
 
         window.location.href = novaUrl
         const novaAba = window.open(novaUrl, '_blank');
 
-        if (novaAba) {
-            novaAba.focus();
-        } else {
-            console.error('O bloqueio de pop-up pode ter impedido a abertura da nova aba.');
+        // if (novaAba) {
+        //     novaAba.focus();
+        // } else {
+        //     console.error('O bloqueio de pop-up pode ter impedido a abertura da nova aba.');
 
-        }
+        // }
     }
 
     const aviso = () => {
-        let y = showWarn
-        let x = getDadosProjetos(projetoSelecionado).git 
-        if ( x === '') {
-            return y
+        if (getDadosProjetos(projetoSelecionado).git === '') {
+            return showWarn()
         } else {
-            return x
+            return redirecionar(); // getDadosProjetos(projetoSelecionado).git
         }
 
     }
