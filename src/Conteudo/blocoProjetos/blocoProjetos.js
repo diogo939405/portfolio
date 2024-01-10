@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { Outlet } from 'react-router-dom'
 import './blocoProjetos.css'
 import './conteudo.js'
@@ -38,10 +38,26 @@ export default function BlocoProjetos() {
         }
     }
 
+    const aviso = () => {
+        let y = showWarn
+        let x = getDadosProjetos(projetoSelecionado).git 
+        if ( x === '') {
+            return y
+        } else {
+            return x
+        }
+
+    }
+
+    const showWarn = () => {
+        toast.current.show({ severity: 'warn', summary: 'Warning', detail: 'Message Content', life: 3000 });
+    }
 
     return (
         <div>
-               <Toast ref={toast} />
+            <Toast ref={toast} />
+
+            <button onClick={showWarn}></button>
 
             <section className='sec' id='projetos'>
                 <h1 className='titulo-projetos' id='titu'>Projetos</h1>
@@ -55,9 +71,9 @@ export default function BlocoProjetos() {
                                     <div style={{ "display": "block" }}>
                                         <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
                                         <div className='botoes-descricao'>
-                                            <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={redirecionar} target="_blank" rel="noopener noreferrer">Acesso ao Projeto</button>
-                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Frontend</a>
-                                            <a className='link-projeto' href={getDadosProjetos(projetoSelecionado).git} target="_blank" rel="noopener noreferrer">Codigo do Backend</a>
+                                            <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={redirecionar}>Acesso ao Projeto</button>
+                                            <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={aviso}>Codigo do Frontend</button>
+                                            <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={aviso}>Codigo do Backend</button>
                                         </div>
                                         <span className='aviso'>*Pode ocorrer de não abrir em outra guia devido a política de segurança do browse</span>
                                     </div>
