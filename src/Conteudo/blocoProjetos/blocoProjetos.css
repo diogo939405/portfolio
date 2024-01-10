@@ -190,7 +190,7 @@
     /* flex-wrap: wrap; */
     /* position: relative; */
     /* flex-grow: 1; */
-    height: 395px;
+    height: 365px;
     width: 1500px;
     background: #4a4a4a63;
     padding: 20px;
@@ -265,7 +265,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4px;
+    margin-top: 10px;
     font-size: 0.7rem;
     font-weight: 500;
     flex-wrap: wrap;
