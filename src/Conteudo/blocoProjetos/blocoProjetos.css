@@ -18,7 +18,7 @@
     text-align: center;
     margin-bottom: 130px;
     white-space: nowrap;
-   
+
     letter-spacing: .15em;
     display: block;
     /* overflow: hidden;
@@ -59,9 +59,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 150px;
-    
+
 }
-#Barbara{
+
+#Barbara {
     background-image: url('./imagensProjetos/414692974_780876667414459_5950248591951011380_n.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -182,7 +183,7 @@
     transition: ease 0.5s;
 }
 
-.legenda{
+.legenda {
     display: none;
     justify-content: center;
     text-align: center;
@@ -203,45 +204,46 @@
     /* z-index: -1; */
     cursor: pointer;
     opacity: 0;
-    transform: translateY(-30px) scale(.5); 
+    transform: translateY(-30px) scale(.5);
     animation: caixa 1s ease forwards;
+}
+
+@keyframes caixa {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
     }
 
-    @keyframes caixa{
-        from{
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-        to{
-            opacity: 1;
-            transform: translateY(0);
-        }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
 
- 
-.descricao-texto{
+
+.descricao-texto {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     /* margin-top: -180px; */
     font-size: 1.8rem;
-    text-align:left;
+    text-align: left;
     /* line-height: 19px; */
     line-height: 170%;
     font-family: 'Montserrat', sans-serif;
 }
 
-.botoes-descricao{
+.botoes-descricao {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-top: 15px;
     /* align-items: center; */
     /* width: 100vw; */
-    
+
 }
 
-.link-projeto{
+.link-projeto {
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -251,14 +253,15 @@
     border: 2px solid rgb(161, 161, 161);
     border-radius: 10px;
     transition: 0.5s ease-in;
-   
+
 }
-.link-projeto:hover{
+
+.link-projeto:hover {
     background-color: rgba(172, 255, 47, 0);
     color: rgb(132, 195, 37);
 }
 
-.aviso{
+.aviso {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,4 +269,16 @@
     font-size: 0.7rem;
     font-weight: 500;
     flex-wrap: wrap;
+}
+
+.p-toast {
+    z-index: 1;
+}
+
+.p-toast-container {
+    width: 50px;
+    height: 50px;
+}
+.p-toast-item{
+    font-size: 0.5rem;
 }

@@ -10,7 +10,7 @@ const listaProjetos = [
         titulo: '222Meu primeiro projeto',
         texto: 'Sistema responsavel pelo controle financeiro dos projetos da FPLF. Fornece aos coordenadores extrato financeiro dos projetos e de suas contas agrupadores. Desevolvido com Angular e API com NestJS utiliza-se de SQLServer como banco de dados e faz integração com outros sistemas da FPLF utilizando-se de APIs! Participei como estagiário aompanhando e atuando na criação das APIs e também na criação do front-end em telas com uso do AG-GRID  e do PRIME-REACT.',
         git:'',
-        link: 'http://google.com',
+        link: '',
         
     }, {
         id: 3,

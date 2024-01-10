@@ -23,39 +23,61 @@ export default function BlocoProjetos() {
         }
     }
 
-    const redirecionar = (url) => {
-console.log('url   ', url)
+    const redirecionar = () => {
         let novaUrl = getDadosProjetos(projetoSelecionado).link
 
-        window.location.href = novaUrl
-        const novaAba = window.open(novaUrl, '_blank');
+        if(novaUrl === ''){
+            return showInfo()
+        }else{
+            
+            window.location.href = novaUrl
+            const novaAba = window.open(novaUrl, '_blank');
+    
+            if (novaAba) {
+                novaAba.focus();
+            } else {
+                console.error('O bloqueio de pop-up pode ter impedido a abertura da nova aba.');
+    
+            }
+        }
+        }
 
-        // if (novaAba) {
-        //     novaAba.focus();
-        // } else {
-        //     console.error('O bloqueio de pop-up pode ter impedido a abertura da nova aba.');
-
-        // }
-    }
+     
 
     const aviso = () => {
         if (getDadosProjetos(projetoSelecionado).git === '') {
-            return showWarn()
+            return showInfo()
         } else {
-            return redirecionar(); // getDadosProjetos(projetoSelecionado).git
+            return redirecionarGit(); // getDadosProjetos(projetoSelecionado).git
         }
 
     }
 
-    const showWarn = () => {
-        toast.current.show({ severity: 'warn', summary: 'Warning', detail: 'Message Content', life: 3000 });
+     const redirecionarGit = () =>{
+        
+        let novaUrla = getDadosProjetos(projetoSelecionado).git
+
+        window.location.href = novaUrla
+        const novaAba = window.open(novaUrla, '_blank');
+
+        if (novaAba) {
+            novaAba.focus();
+        } else {
+            console.error('O bloqueio de pop-up pode ter impedido a abertura da nova aba.');
+
+        }
+
+     }
+
+    const showInfo = () => {
+        toast.current.show({ severity: 'warn', summary: 'Atenção', detail: 'Devido ao fato de ser um projeto que contém dados vitais ao cliente, não foi possível liberar o código fonte de forma pública, caso queira acessar entrar em contato', life: 6000 });
     }
 
     return (
         <div>
             <Toast ref={toast} />
 
-            <button onClick={showWarn}></button>
+            <button onClick={showInfo}></button>
 
             <section className='sec' id='projetos'>
                 <h1 className='titulo-projetos' id='titu'>Projetos</h1>
