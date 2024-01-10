@@ -74,7 +74,7 @@ export default function BlocoProjetos() {
             severity: 'info',
             summary: 'Atenção',
             detail: 'Devido ao fato de ser um projeto que contém dados vitais ao cliente, não foi possível liberar o código fonte de forma pública, caso queira acessar entrar em contato.',
-            life: 30000
+            life: 3000
         });
     }
 
