@@ -9,14 +9,14 @@ const listaProjetos = [
         id: 2,
         titulo: '222Meu primeiro projeto',
         texto: 'Sistema responsavel pelo controle financeiro dos projetos da FPLF. Fornece aos coordenadores extrato financeiro dos projetos e de suas contas agrupadores. Desevolvido com Angular e API com NestJS utiliza-se de SQLServer como banco de dados e faz integração com outros sistemas da FPLF utilizando-se de APIs! Participei como estagiário aompanhando e atuando na criação das APIs e também na criação do front-end em telas com uso do AG-GRID  e do PRIME-REACT.',
-        git:'',
+        git: '',
         link: '',
-        
+
     }, {
         id: 3,
         titulo: '3333Meu primeiro projeto',
-        texto: 'Conjunto de soluções Mobile e Web(Admin). Visa a integração entre os paroquianos através do uso de app que possue diversas informações como: Avisos paroquiais, agenda anual, informações (com mapa de localização) de todas as paroquias do Rio de Janeiro além de um game de Quiz com perguntas religiosas. Neste projeto pude participar em quase todas as etapas: FrontEnd Flutter, Web Angular, Database FireStore.',
-        git:'',
+        texto: 'Conjunto de soluções Mobile e Web(Admin). Visa a integração entre os paroquianos através do uso de app que possue diversas informações como: Avisos paroquiais, agenda anual, informações (com mapa de localização) de todas as paroquias do Rio de Janeiro além de um game de Quiz com perguntas religiosas. Neste projeto pude participar em quase todas as etapas: FrontEnd Flutter, Web Angular, Database FireStore. Projeto ainda em fase de testes, segue o login e senha para acesso ; Login:     / Senha: ',
+        git: '',
         link: 'https://admparoquia.netlify.app/',
     },
 
@@ -29,8 +29,8 @@ export const getDadosProjeto = (id) => {
         id: -1,
         titulo: '',
         texto: '',
-        link:'',
-        
+        link: '',
+
     }
     for (let index = 0; index < listaProjetos.length; index++) {
         const element = listaProjetos[index];
