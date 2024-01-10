@@ -17,6 +17,7 @@
 }
 
 .titulo {
+    
     position: relative;
     right: 70%;
     /* left: 100px; */
@@ -34,9 +35,9 @@
     background-color: blanchedalmond;
 } */
 .logo-texto{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 60px;
-    margin-left: 20px;
+    margin-left: 10px;
     position: relative;
     /* border-right: 2px solid ; */
     width: 25ch;
