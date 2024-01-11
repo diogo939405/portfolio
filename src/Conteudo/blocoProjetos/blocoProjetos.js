@@ -94,6 +94,7 @@ export default function BlocoProjetos() {
 
 
                                     <div style={{ "display": "block" }}>
+                                        <h3 className='descricao-titulo'>{getDadosProjetos(projetoSelecionado).titulo}</h3>
                                         <p className='descricao-texto'>{getDadosProjetos(projetoSelecionado).texto}</p>
                                         <div className='botoes-descricao'>
                                             <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={redirecionar}>Acesso ao Projeto</button>
