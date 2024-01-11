@@ -9,7 +9,7 @@
     color: white;
 }
 
-.secao{
+.secao {
     margin-bottom: -25px;
 }
 
@@ -69,7 +69,7 @@
     flex-wrap: wrap;
 }
 
-#foto-type{
+#foto-type {
     margin-top: -16px;
 }
 
@@ -87,7 +87,7 @@
     transform: scale(.8);
     /* z-index: -1; */
     cursor: pointer;
-  
+
 }
 
 
@@ -124,22 +124,36 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .titulo-skills{
+    .titulo-skills {
         font-size: 2rem;
     }
-    .card{
+
+    .card {
         width: 21%;
         margin-bottom: 0px;
     }
 
     @media only screen and (max-width: 610px) {
-        .titulo-skills{
+        .titulo-skills {
             font-size: 1rem;
         }
+
         .card {
             width: 140px;
             margin-bottom: -20px;
         }
     }
-    
+
+}
+
+@media only screen and (max-width: 480px) {
+    .titulo-skills {
+        font-size: 1.2rem;
+        margin-top: -60px;
+        margin-bottom: 10px;
+    }
+    .card {
+        width: 120px;
+        /* margin-bottom: -10px; */
+    }
 }

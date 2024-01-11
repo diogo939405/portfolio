@@ -21,16 +21,7 @@ export default function BlocoPrincipal() {
       
       
       <section><Linguagens /></section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
+     
 
 
 

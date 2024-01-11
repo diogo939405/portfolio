@@ -17,7 +17,7 @@ export default function BlocoProjetos() {
     const show = () => {
         let d = document.getElementById('descricao')
         if (d.style.display === "none") {
-            d.style.display = 'block'
+            d.style.display = 'flex'
         } else {
             d.style.display = 'none'
         }
