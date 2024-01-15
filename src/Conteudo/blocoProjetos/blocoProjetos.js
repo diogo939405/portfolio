@@ -53,6 +53,15 @@ export default function BlocoProjetos() {
 
     }
 
+    const avisoBackEnd = () => {
+        if (getDadosProjetos(projetoSelecionado).git === '') {
+            return showInfo()
+        } else {
+            return redirecionarGitBackEnd(); // getDadosProjetos(projetoSelecionado).git
+        }
+
+    }
+
     const redirecionarGit = () => {
 
         let novaUrla = getDadosProjetos(projetoSelecionado).git
@@ -68,6 +77,25 @@ export default function BlocoProjetos() {
         }
 
     }
+
+
+
+    const redirecionarGitBackEnd = () => {
+
+        let novaUrla = getDadosProjetos(projetoSelecionado).gitBackEnd
+
+        window.location.href = novaUrla
+        const novaAba = window.open(novaUrla, '_blank');
+
+        if (novaAba) {
+            novaAba.focus();
+        } else {
+            console.error('O bloqueio de pop-up pode ter impedido a abertura da nova aba.');
+
+        }
+
+    }
+
 
     const showInfo = () => {
         toast.current.show({
@@ -99,7 +127,7 @@ export default function BlocoProjetos() {
                                         <div className='botoes-descricao'>
                                             <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={redirecionar}>Acesso ao Projeto</button>
                                             <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={aviso}>Codigo do Frontend</button>
-                                            <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={aviso}>Codigo do Backend</button>
+                                            <button className='link-projeto' style={{ "cursor": "pointer" }} onClick={avisoBackEnd}>Codigo do Backend</button>
                                         </div>
                                         <span className='aviso'>*Pode ocorrer de não abrir em outra guia, ao clicar o botão, devido a política de segurança do browse</span>
                                     </div>
