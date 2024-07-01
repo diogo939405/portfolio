@@ -9,10 +9,10 @@ const listaProjetos = [
     }, {
         id: 2,
         titulo: 'Sistema de controle financeiro',
-        texto: 'Sistema responsavel pelo controle financeiro dos projetos da FPLF. Fornece aos coordenadores extrato financeiro dos projetos e de suas contas agrupadores. Desevolvido com Angular e API com NestJS utiliza-se de SQLServer como banco de dados e faz integração com outros sistemas da FPLF utilizando-se de APIs! Participei como estagiário aompanhando e atuando na criação das APIs e também na criação do front-end em telas com uso do AG-GRID  e do PRIME-REACT.',
-        git: '',
-        gitBackEnd:'',
-        link: '',
+        texto: 'Apresento um site de doações que utiliza a API do MercadoPago para processar pagamentos. Este projeto foi desenvolvido com o objetivo de aprendizado e para criar algo que pudesse ser reutilizado em futuros trabalhos de desenvolvimento. O front-end foi construído usando HTML, CSS, Bootstrap, React.js, React Redux, JavaScript e está hospedado na Vercel. Já o back-end foi desenvolvido com Node.js, MongoDB, e testado com Postman, sendo hospedado na Render. O site é totalmente responsivo e segue os padrões de UX/UI.',
+        git: 'https://github.com/diogo939405/ongprojectfront',
+        gitBackEnd:'https://github.com/diogo939405/ongProject-back',
+        link: '//ongdoacao.vercel.app/',
 
     }, {
         id: 3,
