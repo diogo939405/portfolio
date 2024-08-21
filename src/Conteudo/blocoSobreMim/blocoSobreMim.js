@@ -13,8 +13,8 @@ export default function blocoSobreMim() {
                                 alt=''></img>
                             <br />
                             <div className='curriculo-botão'>
-                                <a href='https://drive.google.com/file/d/12-rS_L39oCK8F_29MoPcYS2EJB8YQbdD/view?usp=drive_link' target="_blank" rel="noopener noreferrer"> <button className='botao' type='button' >Currículo</button> </a>
-                                <a href='https://drive.google.com/file/d/1QjWrtrSQXlxtRheJyS5g76cg03tSu3re/view?usp=drive_link' target="_blank" rel="noopener noreferrer"> <button className='botao' type='button' >Resume</button> </a>
+                                <a href='https://drive.google.com/file/d/1988vctEyHRx3Cjbpamw95k3nmT6lLzrk/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <button className='botao' type='button' >Currículo</button> </a>
+                                <a href='https://drive.google.com/file/d/1ZUyKEgx9Vm00VLdothi6-TR5in_xz4NB/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <button className='botao' type='button' >Resume</button> </a>
                             </div>
 
                         </div>
