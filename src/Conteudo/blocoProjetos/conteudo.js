@@ -1,11 +1,11 @@
 const listaProjetos = [
     {
         id: 1,
-        titulo: 'Sistema de exclusão de usuários',
-        texto: 'Projeto WordPress para o condomínio RB1 apresenta uma solução integrada com recursos avançados de gestão de usuários, implementando API em Node.js para comunicação eficiente entre o front-end em React.js e o WordPress. Essa abordagem permite uma administração independente. A intergração das APIs (wordpress e minha) permitiram esta flexibilização eficaz da gestão de usuários.',
-        git: "https://github.com/diogo939405/crud_remove/tree/MudancaMenu",
-        gitBackEnd:"https://github.com/niltonjacintho/apiwordpress",
-        link: 'https://rb1-condominio-extranet.netlify.app'
+        titulo: 'Site de Doações',
+        texto: 'Desenvolvi um template de site para um cliente utilizando ReactJS, Node.js e MongoDB, com integração de sistema de pagamento via Mercado Pago. O design leve e cativante, aliado à responsividade fornecida pelo Bootstrap, tornou a experiência do usuário fluida em qualquer dispositivo. Esse projeto desafiador, que levou cerca de 5 meses para ser concluído, foi uma jornada de aprendizado e superação. Fiquei extremamente orgulhoso do resultado final, que atendeu às expectativas do cliente e elevou a qualidade do meu trabalho como desenvolvedor junior.',
+        git: "https://github.com/diogo939405/ongprojectfront",
+        gitBackEnd:"https://github.com/diogo939405/ongProject-back",
+        link: 'https://ongdoacao.vercel.app/'
     }, {
         id: 2,
         titulo: 'Sistema de controle financeiro',
