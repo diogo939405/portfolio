@@ -70,14 +70,14 @@
 }
 
 #Puc {
-    background-image: url('../../imagens/logo_diogo-removebg-preview.png');
+    background-image: url('./imagensProjetos/1591044.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -90px;
 }
 
 #RB1 {
-    background-image: url('./imagensProjetos/1591044.png');
+    background-image: url('./imagensProjetos/amada-ma-Ww1il9qRZuM-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -90px;
@@ -196,7 +196,7 @@
     padding: 10px;
     margin-top: 240px;
     /* margin-left: -170px; */
-    margin-left: -90px;
+    margin-left: -18vw;
     border-radius: 10px;
     margin-bottom: 40px;
     transition: .3s;
@@ -315,6 +315,7 @@
     .legenda {
         margin: 35vh auto;
         height: 52vh;
+       
     }
 
     .descricao-texto {
