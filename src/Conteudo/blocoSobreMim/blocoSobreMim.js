@@ -25,9 +25,9 @@ export default function blocoSobreMim() {
                             <h5>Telefone:21-97360-7207</h5>
                             <p>
                                 Olá! Meu nome é Diogo Favilla Gonçalves Jacintho.
-                                Sou formado em Análise e Desenvolvimento de Sistemas e em Língua Inglesa pelo Brasas. Tenho paixão por tecnologia e aprendizado constante.
-                                Foco principalmente em frontend, criando interfaces intuitivas e atraentes, mas também possuo bom conhecimento em backend. Sou determinado, trabalho bem em equipe e já tive papéis de liderança.
-                                Participei de projetos que utilizam CRUD integrado a um site do WordPress, um site de pagamentos com Mercado Pago API e um aplicativo mobile utilizando Flutter. Sempre em busca de novos desafios, estou disponível para mudanças e novas oportunidades.
+                                Sou formado em Análise e Desenvolvimento de Sistemas e em Língua Inglesa pelo Brasas, com proficiência em inglês B2. Tenho uma verdadeira paixão por tecnologia e aprendizado constante.
+                                Atuo como desenvolvedor Fullstack, com maior conhecimento em Frontend, criando interfaces intuitivas e atraentes, mas também possuo bom domínio em Backend. Sou determinado, trabalho bem em equipe e já tive papéis de liderança. Participei de diversos projetos, incluindo um sistema CRUD integrado a um site WordPress, um site de pagamentos com a API do Mercado Pago, e um aplicativo mobile utilizando Fluttere entre outros diversos projetos pessoais.
+                                Estou sempre em busca de novos desafios, com disponibilidade para mudanças e novas oportunidades.
                                 Obrigado por visitar meu portfólio! Sinta-se à vontade para explorar meus projetos e entrar em contato.</p>
 
                         </div>
